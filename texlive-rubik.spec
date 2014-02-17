@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-rubik
 Version:	2.0
-Release:	1
+Release:	2
 Summary:	Document Rubik cube configurations and rotation sequences
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/rubik
@@ -18,7 +18,7 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Requires:	texlive-rubik.bin
+Provides:	texlive-rubik.bin = %{EVRD}
 
 %description
 The bundle provides two packages: rubikcube provides commands
@@ -37,6 +37,7 @@ moves, with the help of a Perl package executed via \write18
 
 #-----------------------------------------------------------------------
 %files
+%{_bindir}/rubikrotation
 %{_texmfdistdir}/scripts/rubik/rubikrotation.pl
 %{_texmfdistdir}/tex/latex/rubik/rubikcube.sty
 %{_texmfdistdir}/tex/latex/rubik/rubikrotation.sty
@@ -73,5 +74,9 @@ moves, with the help of a Perl package executed via \write18
 %build
 
 %install
+mkdir -p %{buildroot}%{_bindir}
+pushd %{buildroot}%{_bindir}
+    ln -sf %{_texmfdistdir}/scripts/rubik/rubikrotation.pl rubikrotation
+popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
