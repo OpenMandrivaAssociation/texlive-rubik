@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-rubik
 Version:	2.0
-Release:	3
+Release:	4
 Summary:	Document Rubik cube configurations and rotation sequences
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/rubik
