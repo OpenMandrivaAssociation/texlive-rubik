@@ -1,6 +1,6 @@
 Name:		texlive-rubik
-Version:	4.0
-Release:	2
+Version:	5.0
+Release:	1
 Summary:	Document Rubik cube configurations and rotation sequences
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/rubik
