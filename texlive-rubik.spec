@@ -3,7 +3,7 @@ Version:	46791
 Release:	2
 Summary:	Document Rubik cube configurations and rotation sequences
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/rubik
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/rubik
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/rubik.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/rubik.doc.r%{version}.tar.xz
